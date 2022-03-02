@@ -1,0 +1,139 @@
+2022-03-02 14:39:45.806 [main] INFO  com.lixnlearn.support.SupportApplication - Starting SupportApplication using Java 1.8.0_282 on lixns-MacBook-Pro.local with PID 23728 (/Users/mac/github-project/kisuke/support/target/classes started by mac in /Users/mac/github-project/kisuke)
+2022-03-02 14:39:45.807 [main] INFO  com.lixnlearn.support.SupportApplication - No active profile set, falling back to default profiles: default
+2022-03-02 14:39:46.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-03-02 14:39:46.149 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-02 14:39:46.150 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-02 14:39:46.150 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-02 14:39:46.177 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-02 14:39:46.177 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 354 ms
+2022-03-02 14:39:46.358 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [106.52.106.211:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-lixnGroup1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = lixnGroup1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-03-02 14:39:46.381 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-03-02 14:39:46.381 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-03-02 14:39:46.381 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646203186380
+2022-03-02 14:39:46.382 [main] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Subscribed to topic(s): lixn
+2022-03-02 14:39:46.386 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-02 14:39:46.393 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-02 14:39:46.422 [main] INFO  com.lixnlearn.support.SupportApplication - Started SupportApplication in 0.784 seconds (JVM running for 1.177)
+2022-03-02 14:39:46.534 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Cluster ID: 1gV7bXrMTreup_n-EC8gXQ
+2022-03-02 14:39:46.535 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Discovered group coordinator 106.52.106.211:9092 (id: 2147483647 rack: null)
+2022-03-02 14:39:46.536 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] (Re-)joining group
+2022-03-02 14:39:46.576 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] (Re-)joining group
+2022-03-02 14:39:46.591 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Successfully joined group with generation Generation{generationId=3, memberId='consumer-lixnGroup1-1-8c1cdbd0-700a-434b-bbb7-dfb2d655d744', protocol='range'}
+2022-03-02 14:39:46.592 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Finished assignment for group at generation 3: {consumer-lixnGroup1-1-8c1cdbd0-700a-434b-bbb7-dfb2d655d744=Assignment(partitions=[lixn-0, lixn-1, lixn-2, lixn-3])}
+2022-03-02 14:39:46.610 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Successfully synced group in generation Generation{generationId=3, memberId='consumer-lixnGroup1-1-8c1cdbd0-700a-434b-bbb7-dfb2d655d744', protocol='range'}
+2022-03-02 14:39:46.610 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Notifying assignor about the new Assignment(partitions=[lixn-0, lixn-1, lixn-2, lixn-3])
+2022-03-02 14:39:46.611 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Adding newly assigned partitions: lixn-2, lixn-1, lixn-3, lixn-0
+2022-03-02 14:39:46.641 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Setting offset for partition lixn-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[106.52.106.211:9092 (id: 0 rack: null)], epoch=0}}
+2022-03-02 14:39:46.641 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Setting offset for partition lixn-1 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[106.52.106.211:9092 (id: 0 rack: null)], epoch=0}}
+2022-03-02 14:39:46.641 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Setting offset for partition lixn-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[106.52.106.211:9092 (id: 0 rack: null)], epoch=0}}
+2022-03-02 14:39:46.641 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Setting offset for partition lixn-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[106.52.106.211:9092 (id: 0 rack: null)], epoch=0}}
+2022-03-02 14:39:46.641 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - lixnGroup1: partitions assigned: [lixn-2, lixn-1, lixn-3, lixn-0]
+2022-03-02 14:40:23.812 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Revoke previously assigned partitions lixn-2, lixn-1, lixn-3, lixn-0
+2022-03-02 14:40:23.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - lixnGroup1: partitions revoked: [lixn-2, lixn-1, lixn-3, lixn-0]
+2022-03-02 14:40:23.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Member consumer-lixnGroup1-1-8c1cdbd0-700a-434b-bbb7-dfb2d655d744 sending LeaveGroup request to coordinator 106.52.106.211:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2022-03-02 14:40:23.814 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-lixnGroup1-1, groupId=lixnGroup1] Unsubscribed all topics or patterns and assigned partitions
+2022-03-02 14:40:23.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-03-02 14:40:23.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-03-02 14:40:23.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-03-02 14:40:23.835 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-lixnGroup1-1 unregistered
+2022-03-02 14:40:23.835 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - lixnGroup1: Consumer stopped
+2022-03-02 14:40:27.519 [main] INFO  com.lixnlearn.support.SupportApplication - Starting SupportApplication using Java 1.8.0_282 on lixns-MacBook-Pro.local with PID 23737 (/Users/mac/github-project/kisuke/support/target/classes started by mac in /Users/mac/github-project/kisuke)
+2022-03-02 14:40:27.520 [main] INFO  com.lixnlearn.support.SupportApplication - No active profile set, falling back to default profiles: default
+2022-03-02 14:40:28.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-03-02 14:40:28.394 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-02 14:40:28.395 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-02 14:40:28.395 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-03-02 14:40:28.443 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-02 14:40:28.443 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 866 ms
+2022-03-02 14:40:28.807 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-03-02 14:40:28.808 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-03-02 14:40:28.808 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646203228806
+2022-03-02 14:40:28.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-02 14:40:28.824 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-02 14:40:28.859 [main] INFO  com.lixnlearn.support.SupportApplication - Started SupportApplication in 2.12 seconds (JVM running for 2.516)
+2022-03-02 14:40:29.101 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - lixnGroup1: partitions assigned: [lixn-2, lixn-1, lixn-3, lixn-0]
+2022-03-02 14:40:35.499 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-02 14:40:35.499 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-03-02 14:40:35.500 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-03-02 14:40:35.556 [http-nio-8080-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-03-02 14:40:35.556 [http-nio-8080-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-03-02 14:40:35.556 [http-nio-8080-exec-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646203235556
+2022-03-02 14:40:35.666 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  com.lixnlearn.support.kafka.UserLogConsumer - >>>>>>>>>> record = Optional[{"state":"0","userid":"3y","username":"lixin"}]
